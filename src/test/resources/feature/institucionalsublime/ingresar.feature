@@ -15,4 +15,4 @@ Característica:
   Escenario: olvide mi clave
   Cuando el usuario dio click en ingresar
   Y da click en olvide mi clave ingresa al correo da enviar
-    Entonces se despliega un mensaje que se envia informacion de recuperacion al email 
+    Entonces se despliega un mensaje que se envia informacion de recuperacion al email
