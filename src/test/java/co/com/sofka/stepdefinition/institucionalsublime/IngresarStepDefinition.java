@@ -9,6 +9,9 @@ import io.cucumber.java.es.Entonces;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
+
 
 public class IngresarStepDefinition extends SetupWebUI {
 
@@ -43,7 +46,15 @@ public class IngresarStepDefinition extends SetupWebUI {
     }
     @Entonces("se muestra un mensaje indicado que el correo y la contraseña no existe")
     public void seMuestraUnMensajeIndicadoQueElCorreoYLaContraseñaNoExiste() {
-        quiteDriver();
+        try {
+            assertThat(ingresarPageCases.mensajeDeError(), is(""));
+            quiteDriver();
+
+        }catch (Exception e){
+            quiteDriver();
+            Assertions.fail(e.getMessage(),e);
+            LOGGER.error(e.getMessage(),e);
+        }
 
     }
 
@@ -64,7 +75,15 @@ public class IngresarStepDefinition extends SetupWebUI {
     }
     @Entonces("se despliega un mensaje que se envia informacion de recuperacion al email")
     public void seDespliegaUnMensajeQueSeEnviaInformacionDeRecuperacionAlEmail() {
-        quiteDriver();
+        try {
+            assertThat(ingresarPageCases.mensajeDeError(), is(""));
+            quiteDriver();
+
+        }catch (Exception e){
+            quiteDriver();
+            Assertions.fail(e.getMessage(),e);
+            LOGGER.error(e.getMessage(),e);
+        }
 
     }
 
