@@ -23,7 +23,7 @@ public class RegistrarPage extends CommonActionsOnPages {
     @FindBy ( id = "nombres")
     protected WebElement ingreseNombre;
 
-    @FindBy ( id = "apellido")
+    @FindBy ( id = "apellidos")
     protected  WebElement ingresarApellido;
 
     @FindBy ( id = "id_pais")
@@ -41,7 +41,7 @@ public class RegistrarPage extends CommonActionsOnPages {
     @FindBy ( id = "acepto_politicas")
     protected WebElement heledioYaceptoPoliticas;
 
-    @FindBy ( id = "btn_summit")
+    @FindBy ( id = "btn_submit")
     protected WebElement botonListo;
 
     @FindBy (xpath = "//*[@id=\"proyecto_sublimesolutions\"]/body/div[6]/div[3]/div[2]/h1")

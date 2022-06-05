@@ -31,10 +31,10 @@ public class RegistrarPageCases extends RegistrarPage{
         scrollOn(botonIngresar);
         clickOn(botonIngresar);
 
-        scrollOn(botonRegistrar);
-        clickOn(botonRegistrar);
+        //scrollOn(botonRegistrar);
+        clickWithJseOn(botonRegistrar);
 
-        scrollOn(ingreseNombre);
+        //scrollOn(ingreseNombre);
         clearOn( ingreseNombre);
         typeOn( ingreseNombre, registrerModel.getNombre());
 
@@ -42,26 +42,26 @@ public class RegistrarPageCases extends RegistrarPage{
         clearOn( ingresarApellido);
         typeOn( ingresarApellido, registrerModel.getApellido());
 
-        scrollOn(seleccionePais);
-        clearOn( seleccionePais);
-        typeOn( seleccionePais, registrerModel.getPais());
+        //scrollOn(seleccionePais);
+        //clearOn( seleccionePais);
+        //typeOn( seleccionePais, registrerModel.getPais());
 
-        scrollOn(ingresarEmailc);
+        //scrollOn(ingresarEmailc);
         clearOn( ingresarEmailc);
         typeOn( ingresarEmailc, registrerModel.getEmail());;
 
-        scrollOn(suministeClave);
+        //scrollOn(suministeClave);
         clearOn(suministeClave);
         typeOn( suministeClave, registrerModel.getClave());
 
-        scrollOn(confirmarLaclave);
+        //scrollOn(confirmarLaclave);
         clearOn( confirmarLaclave);
         typeOn( confirmarLaclave, registrerModel.getConfirmarClave());
 
-        scrollOn(heledioYaceptoPoliticas);
+        //scrollOn(heledioYaceptoPoliticas);
         clickOn(heledioYaceptoPoliticas);
 
-        scrollOn(botonListo);
+        //scrollOn(botonListo);
         clickOn(botonListo);
 
 

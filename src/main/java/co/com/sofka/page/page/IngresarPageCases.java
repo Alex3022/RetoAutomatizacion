@@ -54,7 +54,7 @@ public class IngresarPageCases extends IngresarPage{
         clickOn(botonIngresar);
 
         scrollOn(botonOlvideMiClave);
-        scrollOn(botonOlvideMiClave);
+        clickOn(botonOlvideMiClave);
 
         scrollOn(campoOlvideMiclave);
         clearOn(campoOlvideMiclave);
