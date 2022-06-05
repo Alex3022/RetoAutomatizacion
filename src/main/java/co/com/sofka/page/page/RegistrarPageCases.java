@@ -44,7 +44,7 @@ public class RegistrarPageCases extends RegistrarPage{
 
         //scrollOn(seleccionePais);
         //clearOn( seleccionePais);
-        //typeOn( seleccionePais, registrerModel.getPais());
+        typeOn( seleccionePais, registrerModel.getPais());
 
         //scrollOn(ingresarEmailc);
         clearOn( ingresarEmailc);
