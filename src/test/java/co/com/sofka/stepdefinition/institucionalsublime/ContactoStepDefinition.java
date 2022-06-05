@@ -79,6 +79,7 @@ public class ContactoStepDefinition extends SetupWebUI {
         contactoModel.setEmail("alexa30@yopmail.com");
         contactoModel.setAsunto("hola");
         contactoModel.setEmpresa("sofka");
+        contactoModel.setMensaje("Casi que no dios mio");
         contactoModel.setNombreCompleto("dhayannajaramillo");
         contactoModel.setTelefono("cualquiwea");
         contactoModel.setPais("colombia");

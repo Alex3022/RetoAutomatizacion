@@ -36,36 +36,38 @@ public class ContactarPageCases extends ContactarPage {
         scrollOn(ingresaraOpcionContacto);
         clickOn(ingresaraOpcionContacto);
 
-        scrollOn(ingresarNombreCompleto);
+
+        //scrollOn(ingresarNombreCompleto);
         clearOn(ingresarNombreCompleto);
         typeOn(ingresarNombreCompleto, contactoModel.getNombreCompleto());
 
-        scrollOn(ingresaEmail);
+
+        //scrollOn(ingresaEmail);
         clearOn(ingresaEmail);
         typeOn(ingresaEmail, contactoModel.getEmail());
 
-        scrollOn(seleccionarpais);
-        clearOn(seleccionarpais);
-        typeOn(seleccionarpais, contactoModel.getPais());
-
-
-        scrollOn(ingresarTelefono);
-        clearOn(ingresarTelefono);
-        typeOn(ingresarTelefono, contactoModel.getTelefono());
-
-        scrollOn(IngresarEmpresa);
-        clearOn(IngresarEmpresa);
-        typeOn(IngresarEmpresa, contactoModel.getEmpresa());
-
-        scrollOn(ingresarAsunto);
+        //scrollOn(ingresarAsunto);
         clearOn(ingresarAsunto);
         typeOn(ingresarAsunto, contactoModel.getAsunto());
 
-        scrollOn(ingresarMensajeRequerido);
+        //scrollOn(ingresarMensajeRequerido);
         clearOn(ingresarMensajeRequerido);
         typeOn(ingresarMensajeRequerido, contactoModel.getMensaje());
 
-        scrollOn(botonEnviar);
+        //scrollOn(seleccionarpais);
+        //clearOn(seleccionarpais);
+        //typeOn(seleccionarpais, contactoModel.getPais());
+
+
+        //scrollOn(ingresarTelefono);
+        clearOn(ingresarTelefono);
+        typeOn(ingresarTelefono, contactoModel.getTelefono());
+
+        //scrollOn(IngresarEmpresa);
+        clearOn(IngresarEmpresa);
+        typeOn(IngresarEmpresa, contactoModel.getEmpresa());
+
+        //scrollOn(botonEnviar);
         clickOn(botonEnviar);
 
 
