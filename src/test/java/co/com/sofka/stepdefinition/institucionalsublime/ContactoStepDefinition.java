@@ -36,7 +36,7 @@ public class ContactoStepDefinition extends SetupWebUI {
     public void elUsarioEstaEnInicioDaClickEnLaOpcionContactoYElUsarioEntraAContactoLlenaLosCamposYLeDaEnviar() {
 
         try {
-            contactarPageCases = new ContactarPageCases(driver,contactoModel());
+            contactarPageCases = new ContactarPageCases(driver,modelContacto());
             contactarPageCases.contactarPorlaPagina();
 
         }catch (Exception e){
@@ -58,7 +58,7 @@ public class ContactoStepDefinition extends SetupWebUI {
     public void elUsarioEstaEnInicioDaClickEnLaOpcionContactoYElUsarioEntraAContatoLlenaLosCamposYColocaElCorreoErrado() {
 
         try {
-            contactarPageCases = new ContactarPageCases(driver,contactoModel());
+            contactarPageCases = new ContactarPageCases(driver,modelContacto());
             contactarPageCases.contactarPorlaPagina();
 
         }catch (Exception e){
@@ -74,7 +74,7 @@ public class ContactoStepDefinition extends SetupWebUI {
 
     }
 
-    private ContactoModel contactoModel() {
+    private ContactoModel modelContacto() {
         ContactoModel contactoModel = new ContactoModel();
         contactoModel.setEmail("alexa30@yopmail.com");
         contactoModel.setAsunto("hola");
