@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.concurrent.TimeUnit;
 
 import static co.com.sofka.util.Log4jValues.LOG4J_PROPERTIES_FILE_PATH;
 import static com.google.common.base.StandardSystemProperty.USER_DIR;
@@ -20,9 +21,10 @@ public class SetupWebUI {
     }
 
     private void generalSetUp(){
-        //WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup();
 
         driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         driver.get(DEMO_QA_URL);
         driver.manage().window().maximize();
     }
